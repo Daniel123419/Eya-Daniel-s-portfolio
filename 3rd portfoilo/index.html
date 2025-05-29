@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eya Daniel Ifebuche Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Eya Daniel Ifebuche</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm Eya</h1>
+      <p>Frontend Developer & Advanced Certification Graduate from computer science</p>
+      <button onclick="scrollToContact()">Hire Me</button>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a passionate frontend developer with a strong foundation in HTML, CSS, and JavaScript. Currently in 100 level at Bells University, I recently completed an advanced frontend course at New Horizons. I love building responsive and dynamic websites.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>Random Quote Generator</h3>
+        <p>Displays a random motivational quote each time you click a button.</p>
+        <p><strong>Technologies:</strong> HTML, CSS, JS</p>
+        <p><strong>My Role:</strong> Full Developer</p>
+        <a href="#">Demo</a> | <a href="#">GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Tip Calculator</h3>
+        <p>Calculates how much each person pays including tip.</p>
+        <p><strong>Technologies:</strong> HTML, CSS, JS</p>
+        <p><strong>My Role:</strong> Full Developer</p>
+        <a href="#">Demo</a> | <a href="#">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill"><p>HTML</p><div class="bar"><div class="progress html"></div></div></div>
+      <div class="skill"><p>CSS</p><div class="bar"><div class="progress css"></div></div></div>
+      <div class="skill"><p>JavaScript</p><div class="bar"><div class="progress js"></div></div></div>
+      <div class="skill"><p>Responsive Design</p><div class="bar"><div class="progress responsive"></div></div></div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <h3>New Horizons ICT 118</h3>
+        <p><strong>Role:</strong> Student - Advanced Frontend Development</p>
+        <p><strong>Duration:</strong> 7 months</p>
+        <p><strong>Responsibilities:</strong> Built various frontend projects, learned industry standards.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="feedback"></div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Eya Daniel Ifebuche. All Rights Reserved.</p>
+    <p id="time"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
